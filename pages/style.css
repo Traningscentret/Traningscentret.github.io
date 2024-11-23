@@ -16,4 +16,48 @@ nav {
     gap: 10px;
 }
 
-.nav-section a{}
+.nav-section a {
+    color: black;
+    text-decoration: none;
+    padding: 15px;
+}
+
+.nav-section a:hover {
+    background-color: lightcoral;
+}
+
+.nav-section a:hover {
+    background-color: lightcoral;
+}
+
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    margin-top: 20px;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .schema {
+    background-color: lightcoral;
+}
