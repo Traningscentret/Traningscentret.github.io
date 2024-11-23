@@ -1,0 +1,19 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-logo img {
+    max-width: 80;
+    height: 80;
+}
+
+.nav-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 100px;
+    gap: 10px;
+}
+
+.nav-section a{}
