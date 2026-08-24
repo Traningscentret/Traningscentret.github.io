@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 
 <head>
     <meta charset="UTF-8">
@@ -7,6 +7,8 @@
     <title>TräningsCentret</title>
     <link rel="icon" href="assets/pictures/old-logo.png" type="image/x-icon" />
     <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/home.css">
+    <script src="js/home.js" defer></script>
 </head>
 
 <body>
@@ -29,8 +31,25 @@
             <button id="sg-redirect"></button>
         </div>
     </nav>
-    <header>
-        
+    <header class="hero-carousel" aria-label="TräningsCentret bildspel">
+        <div class="carousel-slides">
+            <figure class="carousel-slide is-active"> <!--Start!-->
+                <img src="assets/pictures/Training1.png" alt="Personer som utför olika gymnastik övningar i grupp">
+            </figure>
+            <figure class="carousel-slide">
+                <img src="assets/pictures/Training2.png" alt="Personer som poserar med gymnastik redskap i bakgrunden" >
+            </figure>
+            <figure class="carousel-slide">
+                <img src="assets/pictures/Training3.png" alt="En person som gör en volt i luften med gymnastik redskap i bakgrunden">
+            </figure>
+        </div>
+        <button class="carousel-button carousel-button--previous" type="button" aria-label="Föregående bild"><img class='arrow-header' src="assets/symbols/arrow-header-2.png" alt="Pil för att byta bild"></button>
+        <button class="carousel-button carousel-button--next" type="button" aria-label="Nästa bild"><img class='arrow-header' src="assets/symbols/arrow-header.png" alt="Pil för att byta bild"></button>
+        <div class="carousel-dots" aria-label="Välj bild">
+            <button class="carousel-dot is-active" type="button" aria-label="Visa bild 1" aria-current="true"></button>
+            <button class="carousel-dot" type="button" aria-label="Visa bild 2"></button>
+            <button class="carousel-dot" type="button" aria-label="Visa bild 3"></button>
+        </div>
     </header>
 </body>
 
