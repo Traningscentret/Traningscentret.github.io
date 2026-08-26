@@ -134,7 +134,7 @@ main{
 
     .nav-section {
         gap: 0.8rem;
-        font-size: 0.8rem;
+        font-size: 0.8rem;s
     }
 
     .hero-carousel {
@@ -147,10 +147,10 @@ main{
     }
 
     .carousel-button--previous {
-        left: 0.75rem;
+        display: none;
     }
 
     .carousel-button--next {
-        right: 0.75rem;
+        display: none;
     }
 }
