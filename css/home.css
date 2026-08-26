@@ -1,0 +1,156 @@
+
+main{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.hero-carousel {
+    position: relative;
+    height: 50vh;
+
+    min-height: 20rem;
+    overflow: hidden;
+    background: #202522;
+}
+
+.carousel-slides,
+.carousel-slide {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.carousel-slide {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transform: scale(1.03);
+    transition: opacity 500ms ease, transform 700ms ease;
+}
+
+.carousel-slide.is-active {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.carousel-slide::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    border-style: none;
+    z-index: 2;
+    width: 3.25rem;
+    height: 3.25rem;
+    border-radius: 50%;
+    color: var(--main-color);
+    font-size: 1.6rem;
+    line-height: 1;
+    cursor: pointer;
+    background-color: var(--light-color);
+    transform: translateY(-50%);
+    transition: background 180ms ease, transform 180ms ease;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-button:hover,
+.carousel-button:focus-visible {
+    transform: translateY(-50%) scale(1.08);
+}
+
+.arrow-header{
+    width: 2rem;
+    height: 2rem;
+    object-fit: cover;
+    display: block;
+}
+
+.carousel-button--previous {
+    left: 1.5rem;
+}
+
+.carousel-button--next {
+    right: 1.5rem;
+}
+
+.carousel-dots {
+    position: absolute;
+    bottom: 1.5rem;
+    left: 50%;
+    z-index: 2;
+    display: flex;
+    gap: 0.6rem;
+    transform: translateX(-50%);
+}
+
+.carousel-dot {
+    width: 0.7rem;
+    height: 0.7rem;
+    padding: 0;
+    border: 1px solid var(--light-color);
+    border-radius: 50%;
+    background: transparent;
+    cursor: pointer;
+}
+
+.carousel-dot.is-active {
+    background: var(--main-color);
+    border-color: var(--main-color);
+}
+.header-text-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+
+@media (max-width: 600px) {
+    nav {
+        height: 4.5rem;
+        margin: 0 1rem;
+    }
+
+    .nav-logo img {
+        height: 3.5rem;
+    }
+
+    .nav-section {
+        gap: 0.8rem;
+        font-size: 0.8rem;
+    }
+
+    .hero-carousel {
+        height: calc(100vh - 4.5rem);
+    }
+
+    .carousel-button {
+        width: 2.75rem;
+        height: 2.75rem;
+    }
+
+    .carousel-button--previous {
+        left: 0.75rem;
+    }
+
+    .carousel-button--next {
+        right: 0.75rem;
+    }
+}
