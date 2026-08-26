@@ -5,6 +5,7 @@
 :root {
   --main-color: #D42D35;
   --light-color: #F3EDED;
+  --black-color: #150203;
 }
 
 html,
@@ -12,10 +13,11 @@ body {
     margin: 0;
     padding: 0;
     min-height: 100%;
+    background-color: var(--light-color);
+    color: var(--black-color)
 }
 
 body {
-    overflow: hidden;
     font-family: Arial, sans-serif;
 }
 
@@ -99,4 +101,3 @@ nav {
     height: 3rem;
     object-fit: cover;
 }
-
