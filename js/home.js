@@ -34,14 +34,6 @@ export function renderHome() {
                         alt="Gymnastikträning i en gymnastikhall"
                     >
                 </figure>
-
-                <figure class="carousel-slide">
-                    <img
-                        src="assets/pictures/Training4.png"
-                        alt="En grupp deltagare inom gymnastik"
-                    >
-                </figure>
-
             </div>
 
 
@@ -88,6 +80,69 @@ export function renderHome() {
                 oavsett ålder eller nivå.
             </p>
 
+        </section>
+        
+        <section
+            class="activites"
+            aria-labelledby="activity-section"
+        >
+
+            <h2 id="activity-title">Våra aktiviteter</h2>
+            <article class="activity-cards">
+                <div class="activity-card">
+                    <img src="../assets/pictures/A_barngymnastik.png" alt="Barngymnastik">
+                    <section class="activity-card-text">
+                    <p class="activity-cards-title">
+                        Barngymnastik
+                    </p>
+                    <p class="activity-cards-info-text">
+                        Grundläggande motorikträning. <br> Redskapsgymnastik med lek, musik <br> och rörelse. 
+                    </p>
+                    <a class="activity-card-expand"> Läs mer </a>
+                </section>
+                    </div>
+           
+                
+                <div class="activity-card">
+                    <img src="../assets/pictures/A_gruppgymnastik.png" alt="Gruppgymnastik">
+                    <section class="activity-card-text">
+                        <p class="activity-cards-title">
+                            Barngymnastik
+                        </p>
+                        <p class="activity-cards-info-text">
+                            Grundläggande motorikträning. <br> Redskapsgymnastik med lek, musik <br> och rörelse. 
+                        </p>
+                        <a class="activity-card-expand"> Läs mer </a>
+                    </section>
+                </div>
+
+                <div class="activity-card">
+                    <img src="../assets/pictures/A_truppgymnastik.png" alt="Truppgymnastik">
+                    <section class="activity-card-text">
+                    <p class="activity-cards-title">
+                        Barngymnastik
+                    </p>
+                    <p class="activity-cards-info-text">
+                        Grundläggande motorikträning. <br> Redskapsgymnastik med lek, musik <br> och rörelse. 
+                    </p>
+                    <a class="activity-card-expand"> Läs mer </a>
+                    </section>
+                </div>
+    
+                <div class="activity-card">
+                    <img src="../assets/pictures/A_paragymnastik.png" alt="Paragymnastik">
+                    <section class="activity-card-text">
+                    <p class="activity-cards-title">
+                      Barngymnastik
+                    </p>
+                    <p class="activity-cards-info-text">
+                        Grundläggande motorikträning. <br> Redskapsgymnastik med lek, musik <br> och rörelse. 
+                    </p>
+                    <a class="activity-card-expand"> Läs mer </a>
+                </section>
+                    </div>
+            </article>
+            <p class="activity-contact"> För mer information och Intresseanmälan kontakta oss på mail <strong> traningscentretTrbg@gmail.com </strong> </p>
         </section>
     `;
 
