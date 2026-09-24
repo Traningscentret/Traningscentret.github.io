@@ -1,67 +1,118 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>TräningsCentret</title>
-    <link rel="icon" href="assets/pictures/old-logo.png" type="image/x-icon" />
+
+    <link rel="icon" href="assets/pictures/old-logo.png" type="image/x-icon">
+
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/home.css">
+
+    <script type="module" src="js/router.js"></script>
 </head>
 
 <body>
-    <nav>
-        <div class="nav-logo">
-            <img src="assets/pictures/old-logo.png" alt="">
-        </div>
-        <div class="nav-section">
-            <a href="">Hem</a>
-            <a href="">Om oss</a>
-            <div class="dropdown">
-                <a class="schema">Schema</a>
-                <div class="dropdown-content">
-                    <a href="#">Schema 1</a>
-                    <a href="#">Schema 2</a>
-                    <a href="#">Schema 3</a>
-                </div>
-            </div>
-            <a href="">Anmälan</a>
-            <a href="">Aktiviteter</a>
-            <a href="">Alla kan gympa</a>
-        </div>
-    </nav>
-    <main class="home-content">
-        <header class="hero-header">
-        <header class="hero-carousel" aria-label="TräningsCentret bildspel">
-            <div class="carousel-slides">
-                <figure class="carousel-slide is-active"> <!--Start!-->
-                    <img src="assets/pictures/Training1.png" alt="Personer som utför olika gymnastik övningar i grupp">
-                </figure>
-                <figure class="carousel-slide">
-                    <img src="assets/pictures/Training2.png" alt="Personer som poserar med gymnastik redskap i bakgrunden" >
-                </figure>
-                <figure class="carousel-slide">
-                    <img src="assets/pictures/Training3.png" alt="En person som gör en volt i luften med gymnastik redskap i bakgrunden">
-                </figure>
-            </div>
-            <button class="carousel-button carousel-button--previous" type="button" aria-label="Föregående bild"><img class='arrow-header' src="assets/symbols/arrow-header-2.png" alt="Pil för att byta bild"></button>
-            <button class="carousel-button carousel-button--next" type="button" aria-label="Nästa bild"><img class='arrow-header' src="assets/symbols/arrow-header.png" alt="Pil för att byta bild"></button>
-            <div class="carousel-dots" aria-label="Välj bild">
-                <button class="carousel-dot is-active" type="button" aria-label="Visa bild 1" aria-current="true"></button>
-                <button class="carousel-dot" type="button" aria-label="Visa bild 2"></button>
-                <button class="carousel-dot" type="button" aria-label="Visa bild 3"></button>
-            </div>
-        </header>
 
-        <section class="header-text-section">
-            <h1>
-                Hitta glädjen i rörelsen - Gympa för alla!
-            </h1>
-            <p>Vi erbjuder gymnastik för barn, ungdomar och vuxna - här finns plats för lek, träning och gemenskap, <br>oavsett ålder eller nivå.</p>
-        </section>
-        
-    </main>
+    <header class="site-header">
+
+        <nav class="main-navigation" aria-label="Huvudnavigation">
+
+            <button
+                id="home-logo-button"
+                class="logo-button"
+                type="button"
+                aria-label="Gå till startsidan"
+            >
+                <img
+                    src="assets/pictures/old-logo.png"
+                    alt="TräningsCentret Trelleborg"
+                >
+            </button>
+
+            <button
+                id="menu-button"
+                class="menu-button"
+                type="button"
+                aria-label="Öppna meny"
+                aria-expanded="false"
+                aria-controls="nav-menu"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul id="nav-menu" class="nav-list">
+
+                <li class="mobile-only">
+                    <button id="home-button" type="button">
+                        Hem
+                    </button>
+                </li>
+
+                <li class="mobile-only">
+                    <button id="registration-button" type="button">
+                        Anmälan
+                    </button>
+                </li>
+
+                <li>
+                    <button id="activities-button" type="button">
+                        Aktiviteter
+                    </button>
+                </li>
+
+                <li>
+                    <button id="schedule-button" type="button">
+                        Schema
+                    </button>
+                </li>
+
+                <li class="desktop-only">
+                    <button id="prices-button" type="button">
+                        Priser
+                    </button>
+                </li>
+
+                <li>
+                    <button id="about-button" type="button">
+                        Om oss
+                    </button>
+                </li>
+
+                <li class="gymnastics-link">
+                    <a
+                        href="https://www.gymnastik.se/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <img
+                            class="redirect-icon"
+                            src="assets/symbols/redirect-link.png"
+                            alt=""
+                            aria-hidden="true"
+                        >
+
+                        <img
+                            class="gymnastics-logo"
+                            src="assets/symbols/svensk-gymnastic.png"
+                            alt="Svensk Gymnastik"
+                        >
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <main id="app"></main>
+
 </body>
 
 </html>
