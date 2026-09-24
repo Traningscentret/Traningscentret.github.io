@@ -160,6 +160,16 @@ button {
 
     background-color: var(--main-color);
 }
+
+/*DIVIDER*/
+.common-divider{
+    width: 68%;
+    max-width: 50rem;
+    margin: 2.8rem auto 2rem;
+    border: none;
+    border-top: 2px solid #d4d4d4;
+}
+
 /*FOOTER*/
 
 .common-footer {
