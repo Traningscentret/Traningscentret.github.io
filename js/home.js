@@ -144,6 +144,63 @@ export function renderHome() {
             </article>
             <p class="activity-contact"> För mer information och Intresseanmälan kontakta oss på mail <strong> traningscentretTrbg@gmail.com </strong> </p>
         </section>
+  
+
+        <section class="partners-section" aria-labelledby="partners-title">
+
+            <section class="gymnastics-federation">
+                <h2 id="partners-title">Vi är en del av Gymnastikförbundet</h2>
+
+                <div class="federation-logos">
+                    <img
+                        src="assets/symbols/svensk-gymnastic.png"
+                        alt="Svensk Gymnastik"
+                    >
+
+                    <img
+                        src="assets/pictures/allakangympasymbol.png"
+                        alt="Alla kan gympa"
+                    >
+                </div>
+            </section>
+
+            <hr class="partners-divider">
+
+            <section class="sponsors">
+                <h2>Våra sponsorer och samarbetspartners</h2>
+
+                <div class="sponsor-logos">
+                    <img
+                        src="assets/pictures/gretaochjohankocks.png"
+                        alt="Greta och Johan Kocks stiftelser"
+                    >
+
+                    <img
+                        src="assets/pictures/skollovskoloninsymbol.png"
+                        alt="Trelleborgs Skollovskoloni"
+                    >
+
+                    <img
+                        src="assets/pictures/trelleborgskommun.png"
+                        alt="Trelleborgs kommun"
+                    >
+
+                    <img
+                        src="assets/pictures/skanerfsisu.png"
+                        alt="RF-SISU Skåne"
+                    >
+                </div>
+
+                <p class="sponsor-thanks">
+                    Ett stort tack till våra fantastiska sponsorer. Ert stöd gör det möjligt för oss att fortsätta utvecklas,
+                    skapa värde och genomföra våra idéer. Vi uppskattar ert engagemang och ert förtroende,
+                    tillsammans gör vi skillnad.
+                </p>
+            </section>
+
+        </section>
+
+
     `;
 
     initializeCarousel();

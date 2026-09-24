@@ -160,13 +160,62 @@ button {
 
     background-color: var(--main-color);
 }
+/*FOOTER*/
 
+.common-footer {
+    min-height: 9rem;
+    padding: 2.5rem 6rem;
+
+    background-color: #080000;
+    color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-contact {
+    text-align: left;
+}
+
+.footer-contact h2 {
+    margin: 0 0 0.5rem;
+    font-size: 0.75rem;
+}
+
+.footer-contact p {
+    margin: 0;
+    font-size: 0.7rem;
+}
+
+.footer-logo {
+    display: block;
+    width: 9rem;
+    height: auto;
+}
 
 /* 
    MOBILE
  */
 
 @media (max-width: 1000px) {
+
+        /*FOOTER*/
+
+    .common-footer {
+        padding: 2rem 1.5rem;
+
+        flex-direction: column-reverse;
+        gap: 2rem;
+    }
+
+    .footer-contact {
+        text-align: center;
+    }
+
+    .footer-logo {
+        width: 8rem;
+    }
 
     .main-navigation {
         height: auto;

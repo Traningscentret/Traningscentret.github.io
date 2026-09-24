@@ -196,6 +196,88 @@
 
 }
 
+/*PARTNERS*/
+
+.partners-section {
+    width: 100%;
+    padding: 3rem 2rem 2.5rem;
+    background-color: var(--background-color);
+    text-align: center;
+}
+
+.gymnastics-federation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gymnastics-federation h2 {
+    margin: 0 0 1.5rem;
+    font-size: 1.25rem;
+}
+
+.federation-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.federation-logos img:first-child {
+    width: 10rem;
+    height: auto;
+}
+
+.federation-logos img:last-child {
+    width: 4.5rem;
+    height: auto;
+}
+
+.partners-divider {
+    width: 68%;
+    max-width: 50rem;
+    margin: 2.8rem auto 2rem;
+    border: none;
+    border-top: 2px solid #d4d4d4;
+}
+
+
+/*SPONSORS*/
+
+.sponsors h2 {
+    margin: 0 0 2rem;
+    font-size: 1.25rem;
+}
+
+.sponsor-logos {
+    width: 100%;
+    max-width: 65rem;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.sponsor-logos img {
+    display: block;
+    width: 100%;
+    max-width: 10rem;
+    max-height: 4.5rem;
+    margin: 0 auto;
+    object-fit: contain;
+}
+
+.sponsor-thanks {
+    max-width: 68rem;
+    margin: 2rem auto 0;
+    font-size: 0.75rem;
+}
+
+
+
+
 /*MOBILE */
 
 @media (max-width: 700px) {
@@ -239,6 +321,58 @@
         display: grid;
         gap: 2rem;
     }
+        /*PARTNERS*/
+
+    .partners-section {
+        padding: 2.5rem 1.25rem 2rem;
+    }
+
+    .gymnastics-federation h2 {
+        font-size: 1.15rem;
+    }
+
+    .federation-logos {
+        gap: 1.5rem;
+    }
+
+    .federation-logos img:first-child {
+        width: 8rem;
+    }
+
+    .federation-logos img:last-child {
+        width: 4rem;
+    }
+
+    .partners-divider {
+        width: 90%;
+        margin: 2.5rem auto 2rem;
+    }
+
+
+    /*SPONSORS*/
+
+    .sponsors h2 {
+        font-size: 1.15rem;
+    }
+
+    .sponsor-logos {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem 1.5rem;
+    }
+
+    .sponsor-logos img {
+        max-width: 8rem;
+        max-height: 4rem;
+    }
+
+    .sponsor-thanks {
+        max-width: 30rem;
+        font-size: 0.75rem;
+        line-height: 1.4;
+    }
+
+
+
 }
 
 
