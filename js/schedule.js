@@ -9,7 +9,7 @@ export function renderSchedule() {
             <p>Här publiceras Träningscentrets schema</p>
         </section>
         <div class="schedule-image-container">
-            <img id='schema-image' src="../SCHEMA HÄR/schema_test.png" alt="Schema för TräningsCentret">
+            <img id='schema-image' src="../SCHEMA HÄR/Schema_Test.png" alt="Schema för TräningsCentret">
         </div>
     `;
 }
