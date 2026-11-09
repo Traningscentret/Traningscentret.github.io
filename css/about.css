@@ -1,0 +1,214 @@
+
+/* ABOUT PAGE */
+
+.about-page {
+    width: 100%;
+    padding: 2.5rem 0 2rem;
+    background-color: var(--background-color);
+}
+
+/* INTRO */
+
+.about-intro {
+    max-width: 50rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    text-align: center;
+}
+
+.about-intro h1 {
+    margin: 0 0 1rem;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.about-intro p {
+    max-width: 44rem;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    line-height: 1.25;
+}
+
+/* DIVIDER */
+
+.about-page .common-divider {
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+
+/* LEADERS */
+
+.about-leaders {
+    width: 100%;
+    text-align: center;
+}
+
+.about-leaders h2 {
+    margin: 0 0 1rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+/* IMAGE CAROUSEL */
+
+.about-carousel {
+    width: 100%;
+}
+
+.about-carousel-images {
+    position: relative;
+    width: calc(100% - 1rem);
+    max-width: 87rem;
+    aspect-ratio: 1392 / 708;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 5px;
+    background-color: var(--background-color);
+}
+
+.about-carousel-image {
+    position: absolute;
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+    object-position: center;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.35s ease;
+}
+
+.about-carousel-image.is-active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* CAROUSEL CONTROLS */
+
+.about-carousel-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    margin-top: 1.5rem;
+}
+
+/* ARROWS */
+
+.about-arrow {
+    width: 2.3rem;
+    height: 2.3rem;
+
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #080000;
+    color: var(--main-color);
+
+    font-size: 1.6rem;
+    font-weight: bold;
+    cursor: pointer;
+
+    transition: background-color 0.2s ease;
+}
+
+.about-arrow:hover {
+    background-color: #333;
+}
+
+.about-arrow:focus-visible,
+.about-dot:focus-visible {
+    outline: 3px solid var(--gymnastics-blue);
+    outline-offset: 3px;
+}
+
+/* DOTS */
+
+.about-carousel-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.45rem;
+}
+
+.about-dot {
+    width: 1.45rem;
+    height: 1.45rem;
+
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+
+    background-color: #080000;
+    cursor: pointer;
+
+    transition: background-color 0.2s ease;
+}
+
+.about-dot.is-active {
+    background-color: var(--main-color);
+}
+
+.about-dot:hover:not(.is-active) {
+    background-color: #555;
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+    .about-page {
+        padding-top: 2rem;
+    }
+
+    .about-intro h1 {
+        font-size: 1.75rem;
+    }
+
+    .about-intro p {
+        font-size: 1rem;
+        line-height: 1.4;
+    }
+
+    .about-leaders h2 {
+        font-size: 1.2rem;
+        padding: 0 1rem;
+    }
+
+    .about-carousel-images {
+        min-height: 20rem;
+    }
+
+    .about-carousel-controls {
+        margin-top: 1.25rem;
+        gap: 0.8rem;
+    }
+
+    .about-arrow {
+        width: 2rem;
+        height: 2rem;
+        font-size: 1.3rem;
+    }
+
+    .about-dot {
+        width: 1rem;
+        height: 1rem;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .about-carousel-image,
+    .about-arrow,
+    .about-dot {
+        transition: none;
+    }
+}
