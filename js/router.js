@@ -1,6 +1,7 @@
 import { renderHome } from "./home.js";
 import { renderAbout } from "./about.js";
-
+import { renderSchedule } from "./schedule.js";
+import { renderPrices } from "./price.js";
 
 const homeLogoButton =
     document.querySelector("#home-logo-button");
@@ -11,17 +12,11 @@ const homeButton =
 const aboutButton =
     document.querySelector("#about-button");
 
-const activitiesButton =
-    document.querySelector("#activities-button");
-
 const scheduleButton =
     document.querySelector("#schedule-button");
 
 const pricesButton =
     document.querySelector("#prices-button");
-
-const registrationButton =
-    document.querySelector("#registration-button");
 
 const menuButton =
     document.querySelector("#menu-button");
@@ -85,6 +80,27 @@ aboutButton.addEventListener("click", () => {
 
     closeMenu();
 });
+
+scheduleButton.addEventListener("click", () => {
+
+    renderSchedule();
+
+    closeMenu();
+});
+
+scheduleButton.addEventListener("click", () => {
+
+    renderSchedule();
+
+    closeMenu();
+});
+
+pricesButton.addEventListener("click", () => {
+    renderPrices();
+
+    closeMenu();
+});
+
 
 
 

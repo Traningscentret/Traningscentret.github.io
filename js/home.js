@@ -98,7 +98,7 @@ export function renderHome() {
                     <p class="activity-cards-info-text">
                         Grundläggande motorikträning. <br> Redskapsgymnastik med lek, musik <br> och rörelse. 
                     </p>
-                    <a class="activity-card-expand"> Läs mer </a>
+                    <a class="activity-card-expand">  </a>
                 </section>
                     </div>
            
@@ -107,12 +107,12 @@ export function renderHome() {
                     <img src="../assets/pictures/A_gruppgymnastik.png" alt="Gruppgymnastik">
                     <section class="activity-card-text">
                         <p class="activity-cards-title">
-                            Barngymnastik
+                            Gruppträning
                         </p>
                         <p class="activity-cards-info-text">
-                            Grundläggande motorikträning. <br> Redskapsgymnastik med lek, musik <br> och rörelse. 
+                            På våra träningspass tränar du rörlighet, <br> styrka och kondition på ett varierat <br> sätt till musik.
                         </p>
-                        <a class="activity-card-expand"> Läs mer </a>
+                            <a class="activity-card-expand grupp-link"> Läs mer </a>
                     </section>
                 </div>
 
@@ -120,12 +120,13 @@ export function renderHome() {
                     <img src="../assets/pictures/A_truppgymnastik.png" alt="Truppgymnastik">
                     <section class="activity-card-text">
                     <p class="activity-cards-title">
-                        Barngymnastik
+                         Truppgymnastik
                     </p>
                     <p class="activity-cards-info-text">
-                        Grundläggande motorikträning. <br> Redskapsgymnastik med lek, musik <br> och rörelse. 
+                        Lagsport som man tränar/tävlar i tre <br> discipliner. Karaktäriseras av fart, <br>
+                        styrka och akrobatik i samarbete i <br> grupp. Disciplinerna är fristående, <br> tumbling och trampett.
                     </p>
-                    <a class="activity-card-expand"> Läs mer </a>
+                        <a class="activity-card-expand">  </a>
                     </section>
                 </div>
     
@@ -133,12 +134,13 @@ export function renderHome() {
                     <img src="../assets/pictures/A_paragymnastik.png" alt="Paragymnastik">
                     <section class="activity-card-text">
                     <p class="activity-cards-title">
-                      Barngymnastik
+                     Paragymnastik/ <br> Alla kan gympa
                     </p>
                     <p class="activity-cards-info-text">
-                        Grundläggande motorikträning. <br> Redskapsgymnastik med lek, musik <br> och rörelse. 
-                    </p>
-                    <a class="activity-card-expand"> Läs mer </a>
+                        Alla kan gympa: Träningskoncept för <br> personer med
+                        funktionsnedsättning, <br> t.ex. rörelsenedsättning, <br> neuropsykiatrisk och/eller intellektuell <br> funktionsnedsättning.
+                    </p> 
+                    <a class="activity-card-expand">  </a>
                 </section>
                     </div>
             </article>

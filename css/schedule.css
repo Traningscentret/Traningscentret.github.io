@@ -1,0 +1,24 @@
+.schedule-info {
+    padding: 2rem;
+    text-align: center;
+}
+
+#schema-image{
+    width:50%;
+    height: auto;
+}
+
+.schedule-image-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5rem;
+}
+
+
+@media (max-width: 700px) {
+    #schema-image{
+        width: 100%;
+        height: auto;
+    }
+}   

@@ -156,6 +156,8 @@
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
     border-radius: 8px;
     background-color: var(--background-color);
+    min-height: 29rem;
+    max-height: 29rem;
 
 }
 
